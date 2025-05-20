@@ -6,13 +6,13 @@ A collection of lecture-based experiments and implementations exploring **audio 
 
 ##  Topics Covered
 
-### 🎛 Filters & Equalizers
+### Filters & Equalizers
 
 - **Bandpass Filter** with configurable center (`fc`) and bandwidth (`fd`)
 - **Three-Way Equalizer** using cascaded low/high-pass filters and gain blending
 - **Proof-of-concept**: Check if gain factors of 1 reconstruct the original signal
 
-### 🌀 Audio Effects
+### Audio Effects
 
 - **Phaser Effect** using:
   - Single allpass filter with modulated `fc`
@@ -28,7 +28,7 @@ A collection of lecture-based experiments and implementations exploring **audio 
 - **Octaver** using zero-crossings and negative peak tracking
 - **Compressor / Limiter** with squarer detector and dynamic response (-30dB threshold)
 
-### 🔁 STFT-Based Processing
+### STFT-Based Processing
 
 - **Vocoder Effect** using Short-Time Fourier Transform (STFT)
 - **Time-Stretching** using STFT
