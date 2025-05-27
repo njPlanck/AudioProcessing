@@ -10,7 +10,7 @@ from matplotlib import style
 
 #read wav file
 fs_mod, mod = wavfile.read ("audio_samples/guit3.wav")  #load modulator
-fs_car, car = wavfile.read ("audio_samples/fox.wav")    #load carrier
+fs_car, car = wavfile.read ("audio_samples/fox.wav")     #load carrier
 
 min_len = min(len(mod), len(car))
 mod = mod[:min_len]
@@ -18,7 +18,7 @@ car = car[:min_len]
 
 # === Parameters ===
 blocksize = 1024
-m = 16  # LPC order
+m = 200  # LPC order
 hop = blocksize//2 # no overlap
 
 y = np.zeros_like(car, dtype=np.float64) #initialize the output
